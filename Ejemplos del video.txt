@@ -1,0 +1,53 @@
+// Length
+string cadena = "Hola Mundo";
+int longitud = cadena.Length;
+Console.WriteLine("Longitud de la cadena: " + longitud); // Salida: 10
+
+// ToUpper
+string mayusculas = cadena.ToUpper();
+Console.WriteLine("Mayúsculas: " + mayusculas); // Salida: HOLA MUNDO
+
+// ToLower
+string minusculas = cadena.ToLower();
+Console.WriteLine("Minúsculas: " + minusculas); // Salida: hola mundo
+
+// IndexOf
+int indice = cadena.IndexOf("Mundo");
+Console.WriteLine("Índice de 'Mundo': " + indice); // Salida: 5
+
+// LastIndexOf
+int uIndiceo = cadena.LastIndexOf("o");
+Console.WriteLine("Último índice de 'o': " + uIndiceo); // Salida: 9
+
+// Substring
+string subcadena = cadena.Substring(5);
+Console.WriteLine("Subcadena desde el índice 5: " + subcadena); // Salida: Mundo
+
+// Replace
+string reemplazada = cadena.Replace("Mundo", "Planeta");
+Console.WriteLine("Reemplazando 'Mundo' por 'Planeta': " + reemplazada); // Salida: Hola Planeta
+
+// Trim
+string cadenaConEspacios = "   Hola   ";
+string cadenaSinEspacios = cadenaConEspacios.Trim();
+Console.WriteLine("Cadena sin espacios en blanco: '" + cadenaSinEspacios + "'"); // Salida: 'Hola'
+
+// StartsWith
+bool empiezaConHola = cadena.StartsWith("Hola");
+Console.WriteLine("Empieza con 'Hola': " + empiezaConHola); // Salida: True
+
+// EndsWith
+bool terminaConMundo = cadena.EndsWith("Mundo");
+Console.WriteLine("Termina con 'Mundo': " + terminaConMundo); // Salida: True
+
+// ToCharArray
+char[] caracteres = cadena.ToCharArray();
+Console.WriteLine("Caracteres en la cadena: ");
+for (int i = 0; i < caracteres.Length; i++)
+{
+    Console.Write(caracteres[i]);
+    if (i < caracteres.Length - 1)
+    {
+        Console.Write("\n ");
+    }
+}
